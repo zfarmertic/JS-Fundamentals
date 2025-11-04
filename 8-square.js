@@ -11,10 +11,10 @@ if (isNaN(parsed)){
         let row = 0;
     while(row < parsed){
             line += "x"
-            console.log(line)
+            // console.log(line)
             row++;
         }
-        // console.log(line)
+        console.log(line)
         col++;
     }
 }
