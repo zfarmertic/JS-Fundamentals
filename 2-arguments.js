@@ -1,6 +1,8 @@
-// const { argv } = require('node:process');
 let arguments = process.argv
-// arguments.forEach((val, index) =>{
-//     console.log(`${index}: ${val}`)
-// })
-console.log(arguments)
+if(arguments[2] === undefined){
+    console.log("No argument")
+}else if(arguments[2] !== undefined){
+    console.log("Argument found")
+}else{
+    console.log("Argument is found")
+}
