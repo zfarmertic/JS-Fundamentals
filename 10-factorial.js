@@ -1,7 +1,7 @@
 const args = process.argv;
 const parsedOne = parseInt(args[2]);
 
-const factorial = () => {
+function factorial () {
     if (isNaN(parsedOne) || parsedOne === 0 ){
         console.log(1)
     }else if (parsedOne > 0){
