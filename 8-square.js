@@ -9,7 +9,7 @@ if (isNaN(parsed)){
     while ( col < parsed){
         let line = ''
         let row = 0;
-    while(row < parsed){
+    while (row < parsed){
             line += "x"
             // console.log(line)
             row++;
