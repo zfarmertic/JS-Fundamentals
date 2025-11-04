@@ -1,18 +1,15 @@
-const args = process.argv;
-const parsedOne = parseInt(args[2]);
 
-function factorial () {
-    if (isNaN(parsedOne) || parsedOne === 0 ){
-        console.log(1)
-    }else if (parsedOne > 0){
-        let factorial = 1;
-         let factorialAnswer = parsedOne;
-        for (let i = 1; i< parsedOne; i++){
-        factorialAnswer = factorialAnswer * i;
-        }
-        
-        console.log(factorialAnswer)
+
+function factorial (n) {
+    if (isNaN(n) || n === 0 ){
+        return 1;
+    }else {
+    return (n * factorial(n - 1))
     }
    
 }
-factorial()
+
+const args = process.argv;
+const parsedOne = parseInt(args[2]);
+
+console.log(factorial(parsedOne))
