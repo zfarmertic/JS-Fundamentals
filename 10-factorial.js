@@ -7,7 +7,7 @@ function factorial () {
     }else if (parsedOne > 0){
         let factorial = 1;
          let factorialAnswer = parsedOne;
-        for (let i = 1; i<= parsedOne; i++){
+        for (let i = 1; i< parsedOne; i++){
         factorialAnswer = factorialAnswer * i;
         }
         
